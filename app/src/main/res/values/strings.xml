@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Post</string>
+    <string name="bLogin">LOGIN</string>
 </resources>

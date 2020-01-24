@@ -10,7 +10,7 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/etUsername"
+        android:id="@+id/etLUsername"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="276dp"
@@ -19,7 +19,7 @@
         android:background="@drawable/textfiled_round"
         android:drawableStart="@drawable/ic_person_black_24dp"
         android:ems="10"
-        android:hint="@string/etUsernameHint"
+        android:hint="@string/etLUsernameHint"
         android:importantForAutofill="auto"
         android:inputType="textPersonName"
         android:paddingStart="10dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etLPassword"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -40,7 +40,7 @@
         android:background="@drawable/textfiled_round"
         android:drawableStart="@drawable/ic_lock_black_24dp"
         android:ems="10"
-        android:hint="@string/etPasswordHint"
+        android:hint="@string/etLPasswordHint"
         android:importantForAutofill="auto"
         android:inputType="textPassword"
         android:paddingStart="10dp"
@@ -49,33 +49,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/etLUsername" />
+
+
+    <Button
+        android:id="@+id/bLLogin"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="login"
+        android:background="@drawable/button_round"
+        android:text="@string/bLLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLPassword" />
 
     <TextView
-        android:id="@+id/tvRegisteHere"
+        android:id="@+id/tvLRegisteHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:clickable="true"
         android:importantForAutofill="no|auto"
-        android:text="@string/tvRegisterHere"
+        android:text="@string/tvLRegisterHere"
         android:textColor="@color/lightBackgroundLogin"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bLogin" />
-
-    <Button
-        android:id="@+id/bLogin"
-        android:autofillHints="login"
-        android:background="@drawable/button_round"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/bLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/bLLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

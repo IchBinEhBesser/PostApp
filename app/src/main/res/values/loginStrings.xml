@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="etUsernameHint">Username</string>
-    <string name="etPasswordHint">Password</string>
-    <string name="tvRegisterHere">Sign Up</string>
-    <string name="bLogin">Log in</string>
+    <string name="etLUsernameHint">Username / E-Mail</string>
+    <string name="etLPasswordHint">Password</string>
+
+    <string name="tvLRegisterHere">Sign Up</string>
+    <string name="bLLogin">Log in</string>
 
 
 </resources>

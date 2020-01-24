@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundLogin">#033B52</color>
+    <color name="accentLogin">#EDAE49</color>
+    <color name="lightBackgroundLogin">#B8C5D6</color>
+
+    <color name="imageLeftTextField">#6F6F6F</color>
+
+</resources>

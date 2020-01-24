@@ -20,9 +20,27 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        registerLink = findViewById(R.id.tvRegisteHere);
+        usernameLEditText = findViewById(R.id.etUsername);
+        passwordLEditText = findViewById(R.id.etPassword);
+        loginButton = findViewById(R.id.bLogin);
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login(usernameLEditText.getText().toString(),passwordLEditText.getText().toString());
+            }
+        });
 
     }
 
+    public void login(String uname, String password){
+
+        Intent loginIntent = new Intent(LoginActivity.this, MainActivity.class);
+
+        startActivity(loginIntent);
+
+    }
 
 
 }

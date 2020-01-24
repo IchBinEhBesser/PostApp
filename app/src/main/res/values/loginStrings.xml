@@ -2,6 +2,8 @@
 <resources>
     <string name="etUsernameHint">Username</string>
     <string name="etPasswordHint">Password</string>
+    <string name="tvRegisterHere">Sign Up</string>
+    <string name="bLogin">Log in</string>
 
 
 </resources>
